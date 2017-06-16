@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient">
+
+    <TextView
+        android:id="@+id/Title_Budget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white_greyish"
+        android:text="What's Your Budget?"
+        android:textSize="45dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/description_budget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white_greyish"
+        android:gravity="center"
+        android:textSize="17dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="How much money would you like to like to set your budget? Don't worry, you can change it later."
+        />
+
+    <EditText
+        android:inputType="numberDecimal"
+        android:id="@+id/editBudgetV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:ems="10"
+        android:textColor="@color/white_greyish"
+        android:text="300"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"/>
+
+    <Button
+        android:id="@+id/continue_budget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="120dp"
+        android:background="@color/white_greyish"
+        android:onClick="OnsaveBudget"
+        android:text="Continue"
+        android:textColor="@color/background_color" />
+
+</LinearLayout>
